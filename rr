@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>系统管理界面</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .navbar { background-color: #333; overflow: hidden; }
+        .navbar a { float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 20px; text-decoration: none; }
+        .navbar a:hover { background-color: #ddd; color: black; }
+        .sidebar { height: 100%; width: 200px; position: fixed; top: 50px; left: 0; background-color: #111; overflow-x: hidden; padding-top: 20px; }
+        .sidebar a { padding: 10px 15px; text-decoration: none; font-size: 18px; color: white; display: block; }
+        .sidebar a:hover { background-color: #575757; }
+        .content { margin-left: 220px; padding: 20px; }
+        .module { margin: 20px 0; }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home">系统管理</a>
+</div>
+
+<div class="sidebar">
+    <a href="#订单管理">订单管理</a>
+    <a href="#快递员管理">快递员管理</a>
+    <a href="#路线规划">路线规划</a>
+    <a href="#物品跟踪">物品跟踪</a>
+    <a href="#支付结算">支付结算</a>
+    <a href="#评价反馈">评价反馈</a>
+</div>
+
+<div class="content">
+    <div id="订单管理" class="module">
+        <h2>订单管理</h2>
+        <p>创建订单、查看订单、订单状态更新</p>
+    </div>
+    <div id="快递员管理" class="module">
+        <h2>快递员管理</h2>
+        <p>快递员信息管理、快递员调度、快递员绩效评估</p>
+    </div>
+    <div id="路线规划" class="module">
+        <h2>路线规划</h2>
+        <p>路线优化、实时路线调整、历史路线分析</p>
+    </div>
+    <div id="物品跟踪" class="module">
+        <h2>物品跟踪</h2>
+        <p>实时位置跟踪、物流状态更新、异常情况报警</p>
+    </div>
+    <div id="支付结算" class="module">
+        <h2>支付结算</h2>
+        <p>订单支付、账单生成、财务报表</p>
+    </div>
+    <div id="评价反馈" class="module">
+        <h2>评价反馈</h2>
+        <p>客户评价、投诉处理、反馈分析</p>
+    </div>
+</div>
+
+</body>
+</html>
